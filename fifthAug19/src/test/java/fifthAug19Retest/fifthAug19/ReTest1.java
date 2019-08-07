@@ -6,15 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 
-//First Commits Test and Retest and ReRun
+//First Commits Test and Retest and ReRun - another Test
 public class ReTest1 {
   
 @Test
   public void f() {
 	  System.out.println("Hello TestNG");
 	  
-	  System.setProperty("webdriver.chrome.driver","C:\\Browers\\chromedriver.exe");
-
+	  //System.setProperty("webdriver.chrome.driver","C:\\Browers\\chromedriver.exe");
+	  System.setProperty("webdriver.internet.driver","C:\\Browers\\IEDriverServer.exe");
 	  //String strPath="https://www.google.com";
 	  String strPath="file:///C:/Satish/JMP/IngeniousLogin.html";
 	  WebDriver driver=new ChromeDriver();
